@@ -1,0 +1,4 @@
+dependencies:
+  - name: nginx
+    version: 4.3.3
+    repository: https://charts.bitnami.com/bitnami

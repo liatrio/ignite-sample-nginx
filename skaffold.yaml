@@ -1,0 +1,10 @@
+apiVersion: skaffold/v1beta12
+kind: Config
+deploy:
+  helm:
+    releases:
+      - name: sample-nginx 
+        chartPath: ./charts/sample-nginx
+        wait: true
+        setValueTemplates:
+          istioDomain: "{{.ISTIO_DOMAIN}}"
